@@ -11,7 +11,6 @@
 * Jhon Edwar Suárez Quiñónez
 * Jheison Estiben Cabal Chimbaco
 
-
 ## ¿De qué trata este trabajo?
 
 Este notebook fue desarrollado para poner en práctica las librerías NumPy, Matplotlib y Seaborn vistas durante la asignatura de Inteligencia Artificial.
@@ -60,7 +59,6 @@ import seaborn as sns
 ```
 
 Cada una cumple una función específica:
-
 * NumPy: generación y procesamiento de datos numéricos.
 * Pandas: organización de los datos en tablas.
 * Matplotlib: creación de gráficos básicos.
@@ -79,12 +77,10 @@ Se creó una matriz de ejemplo y se practicó la extracción de filas, columnas 
 ### Estadística básica
 
 Se calcularon medidas como:
-
 * Promedio
 * Máximo
 * Mínimo
 * Desviación estándar
-
 Estas medidas permiten resumir el comportamiento de un conjunto de datos.
 
 ### Distribuciones normales
@@ -94,13 +90,11 @@ Se generaron datos aleatorios utilizando distribuciones normales para comprender
 ### Construcción de gráficos
 
 Se elaboraron ejemplos de:
-
 * Histogramas
 * Gráficos de líneas
 * Gráficos de barras
 * Mapas de calor
 * Boxplots
-
 El objetivo fue familiarizarse con las herramientas antes de aplicarlas al caso principal.
 
 # Generación del dataset
@@ -108,7 +102,6 @@ El objetivo fue familiarizarse con las herramientas antes de aplicarlas al caso 
 Para el caso de estudio se generó un conjunto de datos de 500 empleados.
 
 Las variables creadas fueron:
-
 | Variable        | Descripción                    |
 | --------------- | ------------------------------ |
 | Edad            | Edad del empleado              |
@@ -125,13 +118,11 @@ Los datos fueron generados utilizando diferentes distribuciones estadísticas pa
 Después de generar el dataset se calcularon varios indicadores descriptivos.
 
 Resultados obtenidos:
-
 * Promedio salarial: $4.486.768
 * Mediana salarial: $4.465.908
 * Edad promedio: 41 años
 * Desviación estándar salarial: $1.179.470
 * Porcentaje de renuncia: 22.2%
-
 Estos valores permiten obtener una visión general de la población analizada antes de construir los gráficos.
 
 # Análisis de gráficos
