@@ -85,12 +85,10 @@ Se creó una matriz de ejemplo para practicar la extracción de elementos, filas
 ### Operaciones Estadísticas
 
 Se calcularon indicadores básicos como:
-
 * Promedio
 * Valor máximo
 * Valor mínimo
 * Desviación estándar
-
 Estos cálculos permiten resumir el comportamiento de un conjunto de datos y constituyen una parte fundamental del análisis exploratorio.
 
 ### Generación de Datos Aleatorios
@@ -100,7 +98,6 @@ Se utilizaron distribuciones normales para generar conjuntos de datos sintético
 ### Construcción de Gráficos
 
 Se desarrollaron ejemplos utilizando:
-
 * Histogramas
 * Gráficos de líneas
 * Gráficos de barras
@@ -110,11 +107,9 @@ Se desarrollaron ejemplos utilizando:
 El propósito fue comprender cómo representar visualmente la información antes de aplicarlo al caso de estudio.
 
 ## Generación del Dataset
-
 Para el análisis principal se generó un conjunto de datos compuesto por 500 empleados.
 
-Las variables consideradas fueron:
-
+-----------Las variables consideradas fueron------------
 | Variable        | Descripción                         |
 | --------------- | ----------------------------------- |
 | Edad            | Edad del empleado                   |
@@ -144,39 +139,37 @@ Estos resultados permiten obtener una visión general de la población estudiada
 
 ### Histograma de Salarios
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/096b27e4-5448-4562-8082-28ee8a360a4b" />
+<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/096b27e4-5448-4562-8082-28ee8a360a4b" />
 
 Este gráfico permite observar la distribución de los salarios dentro de la empresa. La mayoría de los empleados se concentra en rangos salariales medios, mientras que un grupo reducido presenta salarios más altos.
 
 ### Distribución de Renuncias
 
-<img width="430" height="300" alt="image" src="https://github.com/user-attachments/assets/64a696bc-a42d-4438-a165-2294fda52dc4" />
+<img width="380" height="280" alt="image" src="https://github.com/user-attachments/assets/64a696bc-a42d-4438-a165-2294fda52dc4" />
 
 La gráfica muestra que la mayoría de los empleados permanece en la organización. Sin embargo, existe una proporción importante de trabajadores que renuncian, lo que justifica el análisis de los factores asociados a este fenómeno.
 
 ### Relación entre Salario y Satisfacción
 
-<img width="475" height="321" alt="image" src="https://github.com/user-attachments/assets/25ee3cc2-b226-4941-8d41-6b2f8c05dffc" />
-
+<img width="375" height="275" alt="image" src="https://github.com/user-attachments/assets/25ee3cc2-b226-4941-8d41-6b2f8c05dffc" />
 
 No se observa una relación directa entre el salario y el nivel de satisfacción. Esto sugiere que existen otros factores que influyen con mayor fuerza en la decisión de abandonar la empresa.
 
 ### Heatmap de Correlación
 
-<img width="450" height="314" alt="image" src="https://github.com/user-attachments/assets/2bf36703-a3cf-40ce-a1f3-ef1f3a90f269" />
+<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/2bf36703-a3cf-40ce-a1f3-ef1f3a90f269" />
 
 La matriz de correlación permite identificar relaciones entre las variables analizadas. La asociación más evidente se presenta entre las horas extras y la satisfacción laboral.
 
 ### Boxplot de Salarios
 
-<img width="416" height="309" alt="image" src="https://github.com/user-attachments/assets/9e6e757f-aa3f-4661-902b-eef46b7c7088" />
-
+<img width="330" height="230" alt="image" src="https://github.com/user-attachments/assets/9e6e757f-aa3f-4661-902b-eef46b7c7088" />
 
 La comparación entre empleados que renunciaron y quienes permanecieron muestra distribuciones salariales similares, indicando que el salario no parece ser el principal factor asociado a la rotación.
 
 ### Pairplot
 
-<img width="437" height="320" alt="image" src="https://github.com/user-attachments/assets/52dc0894-4e59-4fa4-a3f0-0d3c803f2cad" />
+<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/52dc0894-4e59-4fa4-a3f0-0d3c803f2cad" />
 
 Esta visualización permite observar simultáneamente todas las variables numéricas y detectar patrones generales dentro del conjunto de datos.
 
