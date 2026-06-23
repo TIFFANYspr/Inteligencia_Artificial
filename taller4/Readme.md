@@ -5,51 +5,58 @@
 ### Caso de estudio: Predicción de rotación de empleados en una empresa tecnológica
 
 ### Integrantes
+
 * Ángel Santiago Estupiñán Gómez
-* STEFANY Potosí Reyes
+* STEFANY Potosi Reyes
 * Cristian David García Valderrama
 * Jhon Edwar Suárez Quiñónez
 * Jheison Estiben Cabal Chimbaco
 
-## ¿De qué trata este trabajo?
+## Introducción
 
-Este notebook fue desarrollado para poner en práctica las librerías NumPy, Matplotlib y Seaborn vistas durante la asignatura de Inteligencia Artificial.
+Este notebook fue desarrollado para poner en práctica las librerías NumPy, Matplotlib y Seaborn estudiadas durante la asignatura de Inteligencia Artificial.
 
-La idea principal no era construir un modelo de Machine Learning, sino aprender a trabajar con datos: generarlos, analizarlos, obtener estadísticas y representarlos mediante gráficos que facilitaran su interpretación.
+El objetivo principal del trabajo no fue construir un modelo de Machine Learning, sino comprender cómo se generan, procesan y analizan los datos antes de llegar a una etapa de modelado. Para ello se realizaron actividades teóricas y prácticas que permitieron explorar el funcionamiento de estas herramientas y su importancia dentro del análisis de datos.
 
-Para ello se trabajó con un caso relacionado con la rotación de empleados en una empresa tecnológica. A partir de un conjunto de datos generado artificialmente, se buscó identificar qué variables parecen influir más en la decisión de un empleado de permanecer o renunciar a la organización.
+Como caso de estudio se trabajó con la predicción de rotación de empleados en una empresa tecnológica. A partir de un conjunto de datos generado artificialmente, se buscó identificar qué variables parecen influir en la decisión de un empleado de permanecer o renunciar a la organización.
 
-# Estructura del notebook
+## Estructura del Notebook
 
-El notebook está dividido en dos grandes partes.
+El notebook está dividido en dos secciones principales.
 
-## Parte I – Investigación conceptual
+### Parte I – Investigación Conceptual
 
-En esta sección se desarrollan las preguntas teóricas propuestas en la guía.
+En esta sección se desarrollan las preguntas teóricas propuestas en la guía del taller.
 
-Aquí se explica:
+Se investigan temas relacionados con:
 
-### NumPy
+#### NumPy
 
-Se investigó qué es NumPy, cuál es la función de los arreglos multidimensionales (ndarray), por qué NumPy es más eficiente que las listas tradicionales de Python y cuál es su importancia dentro del aprendizaje automático.
+* Concepto de ndarray.
+* Ventajas frente a las listas tradicionales de Python.
+* Relación con el álgebra lineal.
+* Uso dentro de modelos de Inteligencia Artificial y Deep Learning.
 
-### Matplotlib
+#### Matplotlib
 
-Se estudió el uso de Matplotlib para construir gráficos que permitan representar visualmente los datos y facilitar su interpretación.
+* Construcción de gráficos.
+* Importancia de la visualización de datos.
+* Aplicación en el análisis exploratorio.
 
-### Seaborn
+#### Seaborn
 
-Se analizó la utilidad de Seaborn como complemento de Matplotlib para crear visualizaciones estadísticas más avanzadas con menos líneas de código.
+* Visualización estadística.
+* Mapas de calor.
+* Matrices de correlación.
+* Ventajas frente a Matplotlib.
 
-## Parte II – Caso de estudio
+### Parte II – Desarrollo del Caso de Estudio
 
-La segunda parte corresponde al desarrollo práctico del taller.
+En esta sección se desarrolla el ejercicio principal del taller mediante la generación de un conjunto de datos sintético de 500 empleados y su posterior análisis utilizando estadísticas descriptivas y visualizaciones.
 
-Aquí se genera un conjunto de datos sintético de 500 empleados y posteriormente se realiza un análisis exploratorio utilizando estadísticas y gráficos.
+## Configuración Inicial
 
-# Configuración inicial
-
-Al comienzo del notebook se importan las librerías necesarias:
+El primer bloque de código importa las librerías necesarias para el desarrollo del proyecto.
 
 ```python
 import numpy as np
@@ -58,137 +65,133 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-Cada una cumple una función específica:
-* NumPy: generación y procesamiento de datos numéricos.
-* Pandas: organización de los datos en tablas.
-* Matplotlib: creación de gráficos básicos.
-* Seaborn: visualizaciones estadísticas avanzadas.
+Cada librería cumple una función específica:
 
-También se configura una semilla aleatoria para garantizar que los resultados puedan reproducirse cada vez que se ejecute el código.
+* **NumPy:** operaciones numéricas y generación de datos.
+* **Pandas:** organización y manipulación de datos tabulares.
+* **Matplotlib:** creación de gráficos básicos.
+* **Seaborn:** visualizaciones estadísticas avanzadas.
 
-# Ejercicios de práctica
+También se configura una semilla aleatoria para garantizar que los resultados obtenidos puedan reproducirse en futuras ejecuciones.
 
-Antes de desarrollar el caso de estudio se realizaron varios ejercicios sencillos para comprender mejor el funcionamiento de las librerías.
+## Ejercicios de Práctica
 
-### Indexación de matrices
+Antes de desarrollar el caso principal se realizaron ejercicios para familiarizarse con las librerías estudiadas.
 
-Se creó una matriz de ejemplo y se practicó la extracción de filas, columnas y elementos específicos.
+### Indexación de Matrices
 
-### Estadística básica
+Se creó una matriz de ejemplo para practicar la extracción de elementos, filas y columnas utilizando la indexación bidimensional de NumPy.
 
-Se calcularon medidas como:
+### Operaciones Estadísticas
+
+Se calcularon indicadores básicos como:
+
 * Promedio
-* Máximo
-* Mínimo
+* Valor máximo
+* Valor mínimo
 * Desviación estándar
-Estas medidas permiten resumir el comportamiento de un conjunto de datos.
 
-### Distribuciones normales
+Estos cálculos permiten resumir el comportamiento de un conjunto de datos y constituyen una parte fundamental del análisis exploratorio.
 
-Se generaron datos aleatorios utilizando distribuciones normales para comprender cómo funcionan variables que siguen patrones estadísticos reales.
+### Generación de Datos Aleatorios
 
-### Construcción de gráficos
+Se utilizaron distribuciones normales para generar conjuntos de datos sintéticos y comprender cómo se comportan variables que siguen patrones estadísticos similares a los encontrados en situaciones reales.
 
-Se elaboraron ejemplos de:
+### Construcción de Gráficos
+
+Se desarrollaron ejemplos utilizando:
+
 * Histogramas
 * Gráficos de líneas
 * Gráficos de barras
-* Mapas de calor
+* Heatmaps
 * Boxplots
-El objetivo fue familiarizarse con las herramientas antes de aplicarlas al caso principal.
 
-# Generación del dataset
+El propósito fue comprender cómo representar visualmente la información antes de aplicarlo al caso de estudio.
 
-Para el caso de estudio se generó un conjunto de datos de 500 empleados.
+## Generación del Dataset
 
-Las variables creadas fueron:
-| Variable        | Descripción                    |
-| --------------- | ------------------------------ |
-| Edad            | Edad del empleado              |
-| Salario Mensual | Ingreso mensual                |
-| Horas Extras    | Horas extras realizadas al mes |
-| Antigüedad      | Tiempo en la empresa           |
-| Satisfacción    | Valor entre 1 y 10             |
-| Renunció        | Sí o No                        |
+Para el análisis principal se generó un conjunto de datos compuesto por 500 empleados.
 
-Los datos fueron generados utilizando diferentes distribuciones estadísticas para simular situaciones similares a las que podrían encontrarse en una empresa real.
+Las variables consideradas fueron:
 
-# Estadísticas obtenidas
+| Variable        | Descripción                         |
+| --------------- | ----------------------------------- |
+| Edad            | Edad del empleado                   |
+| Salario Mensual | Ingreso mensual                     |
+| Horas Extras    | Horas extras realizadas por mes     |
+| Antigüedad      | Tiempo de permanencia en la empresa |
+| Satisfacción    | Valor entre 1 y 10                  |
+| Renunció        | Sí o No                             |
 
-Después de generar el dataset se calcularon varios indicadores descriptivos.
+Los datos fueron generados mediante distintas distribuciones estadísticas con el fin de simular un escenario empresarial realista.
 
-Resultados obtenidos:
+## Estadísticas Obtenidas
+
+Después de generar el conjunto de datos se calcularon los principales indicadores descriptivos.
+
+### Resultados
+
 * Promedio salarial: $4.486.768
 * Mediana salarial: $4.465.908
 * Edad promedio: 41 años
 * Desviación estándar salarial: $1.179.470
 * Porcentaje de renuncia: 22.2%
-Estos valores permiten obtener una visión general de la población analizada antes de construir los gráficos.
 
-# Análisis de gráficos
+Estos resultados permiten obtener una visión general de la población estudiada antes de realizar el análisis gráfico.
 
-## Histograma de salarios
+## Análisis de Gráficos
+
+### Histograma de Salarios
 
 ![Histograma](images/histograma_salarios.png)
 
-Este gráfico permite observar cómo se distribuyen los salarios de los empleados.
+Este gráfico permite observar la distribución de los salarios dentro de la empresa. La mayoría de los empleados se concentra en rangos salariales medios, mientras que un grupo reducido presenta salarios más altos.
 
-La mayoría se concentra alrededor de los salarios medios, mientras que un grupo reducido posee salarios más altos.
-
-## Distribución de renuncias
+### Distribución de Renuncias
 
 ![Renuncias](images/renuncias.png)
 
-Se observa que la mayor parte de los empleados permanece en la empresa.
+La gráfica muestra que la mayoría de los empleados permanece en la organización. Sin embargo, existe una proporción importante de trabajadores que renuncian, lo que justifica el análisis de los factores asociados a este fenómeno.
 
-Sin embargo, existe un porcentaje importante de trabajadores que renuncian, por lo que resulta útil estudiar las variables asociadas a este fenómeno.
-
-## Relación entre salario y satisfacción
+### Relación entre Salario y Satisfacción
 
 ![Scatter](images/scatter_salario_satisfaccion.png)
 
-La gráfica muestra que el salario no parece ser el principal factor relacionado con la satisfacción laboral.
+No se observa una relación directa entre el salario y el nivel de satisfacción. Esto sugiere que existen otros factores que influyen con mayor fuerza en la decisión de abandonar la empresa.
 
-Los empleados que renuncian aparecen distribuidos en distintos niveles salariales.
-
-## Heatmap de correlación
+### Heatmap de Correlación
 
 ![Heatmap](images/heatmap_correlacion.png)
 
-La matriz de correlación permite identificar relaciones entre las variables.
+La matriz de correlación permite identificar relaciones entre las variables analizadas. La asociación más evidente se presenta entre las horas extras y la satisfacción laboral.
 
-La asociación más visible aparece entre las horas extras y la satisfacción laboral.
-
-## Boxplot de salarios
+### Boxplot de Salarios
 
 ![Boxplot](images/boxplot_salarios.png)
 
-Este gráfico permite comparar la distribución salarial entre empleados que renunciaron y empleados que permanecieron.
+La comparación entre empleados que renunciaron y quienes permanecieron muestra distribuciones salariales similares, indicando que el salario no parece ser el principal factor asociado a la rotación.
 
-Las diferencias encontradas no son suficientemente grandes para concluir que el salario sea el principal factor de rotación.
-
-## Pairplot
+### Pairplot
 
 ![Pairplot](images/pairplot.png)
 
-Esta visualización reúne todas las variables numéricas y permite observar patrones generales.
+Esta visualización permite observar simultáneamente todas las variables numéricas y detectar patrones generales dentro del conjunto de datos.
 
-Aquí se aprecia con mayor claridad que los empleados con menor satisfacción y más horas extras presentan una tendencia más alta a renunciar.
+## Conclusiones
 
-# Conclusiones personales del análisis
+A partir del análisis realizado se encontró que la satisfacción laboral es la variable que presenta una relación más fuerte con la renuncia de los empleados.
 
-Después de realizar el análisis exploratorio se encontró que la satisfacción laboral es la variable que más parece influir en la renuncia de los empleados.
+También se observó que una mayor cantidad de horas extras parece afectar negativamente la satisfacción y aumentar la probabilidad de rotación.
 
-También se observó que el exceso de horas extras puede afectar negativamente el bienestar de los trabajadores y aumentar la probabilidad de rotación.
+La antigüedad mostró un efecto positivo sobre la permanencia de los trabajadores, mientras que el salario no presentó una influencia tan significativa como se esperaba inicialmente.
 
-Por otro lado, la antigüedad parece actuar como un factor de estabilidad, ya que los empleados con más tiempo dentro de la empresa muestran una menor tendencia a abandonar la organización.
+En conjunto, los resultados evidencian la importancia de realizar análisis exploratorios antes de construir modelos predictivos, ya que permiten comprender mejor el comportamiento de los datos y las relaciones existentes entre las variables.
 
-Finalmente, aunque el salario es una variable importante dentro de cualquier empresa, en este caso no mostró una relación tan fuerte con la decisión de renunciar como inicialmente se esperaba.
+## Reflexión Final
 
-# Reflexión final
+Este taller permitió comprender la importancia del análisis de datos dentro de los proyectos de Inteligencia Artificial.
 
-Este taller permitió comprender que antes de construir modelos de Inteligencia Artificial es necesario conocer y entender los datos con los que se trabaja.
+Las librerías NumPy, Matplotlib y Seaborn facilitaron la generación, exploración y visualización de información, permitiendo identificar patrones que no serían evidentes mediante la simple observación de tablas.
 
-Las librerías NumPy, Matplotlib y Seaborn facilitan enormemente este proceso, ya que permiten generar información estadística, detectar patrones y representar visualmente los resultados.
-
-La experiencia obtenida durante este ejercicio ayuda a sentar las bases para futuros proyectos relacionados con Machine Learning y Ciencia de Datos.
+La experiencia obtenida constituye una base importante para futuros trabajos relacionados con Ciencia de Datos, Machine Learning e Inteligencia Artificial.
