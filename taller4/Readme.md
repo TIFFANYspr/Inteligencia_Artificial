@@ -144,7 +144,7 @@ Estos resultados permiten obtener una visión general de la población estudiada
 
 ### Histograma de Salarios
 
-![Histograma](<img width="698" height="460" alt="image" src="https://github.com/user-attachments/assets/096b27e4-5448-4562-8082-28ee8a360a4b" />)
+<img width="698" height="460" alt="image" src="https://github.com/user-attachments/assets/096b27e4-5448-4562-8082-28ee8a360a4b" />
 
 
 Este gráfico permite observar la distribución de los salarios dentro de la empresa. La mayoría de los empleados se concentra en rangos salariales medios, mientras que un grupo reducido presenta salarios más altos.
