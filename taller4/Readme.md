@@ -41,7 +41,7 @@ Se investigan temas relacionados con:
 * Matrices de correlación.
 * Ventajas frente a Matplotlib.
 
-### Parte II – Desarrollo del Caso de Estudio
+## Parte II – Desarrollo del Caso de Estudio
 En esta sección se desarrolla el ejercicio principal del taller mediante la generación de un conjunto de datos sintético de 500 empleados y su posterior análisis utilizando estadísticas descriptivas y visualizaciones.
 
 ## Configuración Inicial
